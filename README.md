@@ -7,9 +7,7 @@ By counting the number of two-paths in a graph, this program gives social media 
  recommendations (based on number of two-paths) for each vertex using both matrix multiplication and a new adjacency-list based algorithm.
  This program uses 1-indexing (the ﬁrst row of the matrix corresponds to user 1, not user 0).
 
-The recommendations are written to text files 'rec16.txt' and 'rec1024.txt'. If these files already exist in the current directory,
-they will be overwritten. However, if they do not exist, this program will creat files of these names and wirte recommendation based on
-the input matrices. 
+The recommendations are written to text files 'rec16.txt' and 'rec1024.txt'. For line n, it is recommended that user n followers the index of the integer written on that line. If these files already exist in the current directory, they will be overwritten. However, if they do not exist, this program will create files of these names and write recommendation based onthe input matrices. 
 
 The output given is in the form of a weighted directed graph, using adjacency lists. The graph connects nodes that had two-paths from the 
 inputted graph matrix. It returns two lists per node. outputEl is the list of the id's of the connected nodes and outputVal is the list
